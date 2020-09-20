@@ -1,5 +1,5 @@
-<div>
-  <div class="launch-grid">
+<div class="h-100">
+  <div class="launch-grid h-100">
     <div class="card-container" *ngFor="let item of data">
       <div class="card-wrapper">
         <div class="card">
@@ -23,6 +23,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="empty-state" *ngIf="data && data?.length === 0">
+      <h3> No records ...</h3>
     </div>
   </div>
 </div>

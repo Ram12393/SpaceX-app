@@ -8,7 +8,7 @@
           <div class="line"></div>
           <div class="items-container">
             <div class="item" *ngFor="let i=index; let item of filter?.items">
-              <button class="btn" [ngClass]="{'btn-active-1':selectedItem[filter.label] === item}"
+              <button class="btn" [ngClass]="{'btn-active':selectedItem[filter.label] === item}"
                 (click)="select(filter?.label,item)">{{item}}</button>
             </div>
           </div>
