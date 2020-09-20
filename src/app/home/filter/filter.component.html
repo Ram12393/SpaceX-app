@@ -1,0 +1,20 @@
+<div class="fliter-container">
+  <div class="card filter">
+    <div class="card-wrapper">
+      <h4>Filters</h4>
+      <div class="container">
+        <div *ngFor="let filter of filters">
+          <p class="text-center"><small>{{filter?.tag}}</small></p>
+          <div class="line"></div>
+          <div class="items-container">
+            <div class="item" *ngFor="let i=index; let item of filter?.items">
+              <button class="btn" [ngClass]="{'btn-active-1':selectedItem[filter.label] === item}"
+                (click)="select(filter?.label,item)">{{item}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

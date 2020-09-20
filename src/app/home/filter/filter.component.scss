@@ -1,0 +1,56 @@
+.fliter-container {
+  display: flex;
+  justify-content: center;
+
+  .filter {
+
+    width: 185px;
+
+    .card-wrapper {
+      padding: 7px;
+
+      .container {
+
+        .line {
+          border: 0.5px solid;
+          margin: 0 20%;
+          border-color: #cfd4da
+        }
+
+        .items-container {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          text-align: center;
+          margin: 0 0 5% 0;
+
+          .item {
+            margin: 4% 0%;
+          }
+
+          .btn {
+            outline: none;
+            border: none;
+            border-radius: 10%;
+            background: #c5e09b;
+            cursor: pointer;
+            padding: 4px 10px;
+          }
+
+          .btn-active-1 {
+            background: #7cba01;
+          }
+
+          .btn-active-2 {
+            background: #7cba01;
+          }
+
+          .btn-active-3 {
+            background: #7cba01;
+
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,19 @@
+<div class="home">
+  <section>
+    <app-header></app-header>
+  </section>
+  <section class="dashboard">
+    <div class="row grid container">
+      <div class="filter">
+        <app-filter (filterParams)="getSelectFilters($event)"></app-filter>
+      </div>
+      <div class="product">
+        <app-launch [data]="launchRockets"></app-launch>
+      </div>
+    </div>
+  </section>
+  <section>
+    <app-footer></app-footer>
+  </section>
+
+</div>
