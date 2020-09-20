@@ -12,6 +12,6 @@ export class LaunchService {
   ) { }
 
   getRocketLaunches(query){
-    return this.http.get(`${environment.url}launches?limit=25${query}`);
+    return this.http.get(`${environment.url}launches?limit=100${query}`);
   }
 }

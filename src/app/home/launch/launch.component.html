@@ -3,7 +3,7 @@
     <div class="card-container" *ngFor="let item of data">
       <div class="card-wrapper">
         <div class="card">
-          <img class="missile-img" src="{{item?.links?.mission_patch_small}}" alt="">
+          <img class="missile-img" src="{{item?.links?.mission_patch_small}}" alt="{{item?.mission_name}}">
           <div>
             <div class="mission-name">
               <strong>{{item?.mission_name}} #{{item?.flight_number}}</strong>
