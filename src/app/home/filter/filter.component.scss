@@ -1,11 +1,13 @@
 .fliter-container {
   display: flex;
   justify-content: center;
+  background: white;
+  border-radius: 10px;
+  width: 185px;
+  min-width: fit-content;
+  margin: 0 5% 0 0;
 
   .filter {
-
-    width: 185px;
-
     .card-wrapper {
       padding: 7px;
 
@@ -18,13 +20,15 @@
         }
 
         .items-container {
-          display: grid;
-          grid-template-columns: 50% 50%;
-          text-align: center;
-          margin: 0 0 5% 0;
+          display: flex;
+          flex-wrap: wrap;
 
           .item {
             margin: 4% 0%;
+            flex-basis: 50%;
+            flex: 1 0 50%;
+            display: flex;
+            justify-content: center;
           }
 
           .btn {
@@ -37,7 +41,7 @@
             text-transform: capitalize;
           }
 
-          .btn-active{
+          .btn-active {
             background: #7cba01;
           }
         }
